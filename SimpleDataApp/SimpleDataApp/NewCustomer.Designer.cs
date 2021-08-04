@@ -31,19 +31,19 @@ namespace SimpleDataApp
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.accountGroupBox = new System.Windows.Forms.GroupBox();
-            this.customerNameLabel = new System.Windows.Forms.Label();
-            this.customerIDLabel = new System.Windows.Forms.Label();
-            this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.txtCustomerID = new System.Windows.Forms.TextBox();
+            this.txtCustomerName = new System.Windows.Forms.TextBox();
+            this.customerIDLabel = new System.Windows.Forms.Label();
+            this.customerNameLabel = new System.Windows.Forms.Label();
             this.orderGroupBox = new System.Windows.Forms.GroupBox();
-            this.orderAmountLabel = new System.Windows.Forms.Label();
-            this.numOrderAmount = new System.Windows.Forms.NumericUpDown();
-            this.dtpOrderDate = new System.Windows.Forms.DateTimePicker();
             this.orderDateLabel = new System.Windows.Forms.Label();
+            this.dtpOrderDate = new System.Windows.Forms.DateTimePicker();
+            this.numOrderAmount = new System.Windows.Forms.NumericUpDown();
+            this.orderAmountLabel = new System.Windows.Forms.Label();
             this.btnCreateAccount = new System.Windows.Forms.Button();
             this.btnPlaceOrder = new System.Windows.Forms.Button();
-            this.btnAddFinish = new System.Windows.Forms.Button();
             this.btnAddAnotherAccount = new System.Windows.Forms.Button();
+            this.btnAddFinish = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.accountGroupBox.SuspendLayout();
             this.orderGroupBox.SuspendLayout();
@@ -87,14 +87,20 @@ namespace SimpleDataApp
             this.accountGroupBox.TabStop = false;
             this.accountGroupBox.Text = "Add Account";
             // 
-            // customerNameLabel
+            // txtCustomerID
             // 
-            this.customerNameLabel.AutoSize = true;
-            this.customerNameLabel.Location = new System.Drawing.Point(6, 37);
-            this.customerNameLabel.Name = "customerNameLabel";
-            this.customerNameLabel.Size = new System.Drawing.Size(145, 25);
-            this.customerNameLabel.TabIndex = 0;
-            this.customerNameLabel.Text = "Customer Name:";
+            this.txtCustomerID.Location = new System.Drawing.Point(159, 68);
+            this.txtCustomerID.Name = "txtCustomerID";
+            this.txtCustomerID.ReadOnly = true;
+            this.txtCustomerID.Size = new System.Drawing.Size(200, 31);
+            this.txtCustomerID.TabIndex = 3;
+            // 
+            // txtCustomerName
+            // 
+            this.txtCustomerName.Location = new System.Drawing.Point(159, 31);
+            this.txtCustomerName.Name = "txtCustomerName";
+            this.txtCustomerName.Size = new System.Drawing.Size(200, 31);
+            this.txtCustomerName.TabIndex = 2;
             // 
             // customerIDLabel
             // 
@@ -105,20 +111,14 @@ namespace SimpleDataApp
             this.customerIDLabel.TabIndex = 1;
             this.customerIDLabel.Text = "Customer ID:";
             // 
-            // txtCustomerName
+            // customerNameLabel
             // 
-            this.txtCustomerName.Location = new System.Drawing.Point(159, 31);
-            this.txtCustomerName.Name = "txtCustomerName";
-            this.txtCustomerName.Size = new System.Drawing.Size(200, 31);
-            this.txtCustomerName.TabIndex = 2;
-            // 
-            // txtCustomerID
-            // 
-            this.txtCustomerID.Location = new System.Drawing.Point(159, 68);
-            this.txtCustomerID.Name = "txtCustomerID";
-            this.txtCustomerID.ReadOnly = true;
-            this.txtCustomerID.Size = new System.Drawing.Size(200, 31);
-            this.txtCustomerID.TabIndex = 3;
+            this.customerNameLabel.AutoSize = true;
+            this.customerNameLabel.Location = new System.Drawing.Point(6, 37);
+            this.customerNameLabel.Name = "customerNameLabel";
+            this.customerNameLabel.Size = new System.Drawing.Size(145, 25);
+            this.customerNameLabel.TabIndex = 0;
+            this.customerNameLabel.Text = "Customer Name:";
             // 
             // orderGroupBox
             // 
@@ -135,14 +135,22 @@ namespace SimpleDataApp
             this.orderGroupBox.TabStop = false;
             this.orderGroupBox.Text = "Create Order";
             // 
-            // orderAmountLabel
+            // orderDateLabel
             // 
-            this.orderAmountLabel.AutoSize = true;
-            this.orderAmountLabel.Location = new System.Drawing.Point(6, 37);
-            this.orderAmountLabel.Name = "orderAmountLabel";
-            this.orderAmountLabel.Size = new System.Drawing.Size(128, 25);
-            this.orderAmountLabel.TabIndex = 0;
-            this.orderAmountLabel.Text = "Order Amount";
+            this.orderDateLabel.AutoSize = true;
+            this.orderDateLabel.Location = new System.Drawing.Point(6, 75);
+            this.orderDateLabel.Name = "orderDateLabel";
+            this.orderDateLabel.Size = new System.Drawing.Size(104, 25);
+            this.orderDateLabel.TabIndex = 3;
+            this.orderDateLabel.Text = "Order Date:";
+            // 
+            // dtpOrderDate
+            // 
+            this.dtpOrderDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpOrderDate.Location = new System.Drawing.Point(159, 69);
+            this.dtpOrderDate.Name = "dtpOrderDate";
+            this.dtpOrderDate.Size = new System.Drawing.Size(200, 31);
+            this.dtpOrderDate.TabIndex = 2;
             // 
             // numOrderAmount
             // 
@@ -158,22 +166,14 @@ namespace SimpleDataApp
             this.numOrderAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numOrderAmount.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
-            // dtpOrderDate
+            // orderAmountLabel
             // 
-            this.dtpOrderDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpOrderDate.Location = new System.Drawing.Point(159, 69);
-            this.dtpOrderDate.Name = "dtpOrderDate";
-            this.dtpOrderDate.Size = new System.Drawing.Size(200, 31);
-            this.dtpOrderDate.TabIndex = 2;
-            // 
-            // orderDateLabel
-            // 
-            this.orderDateLabel.AutoSize = true;
-            this.orderDateLabel.Location = new System.Drawing.Point(6, 75);
-            this.orderDateLabel.Name = "orderDateLabel";
-            this.orderDateLabel.Size = new System.Drawing.Size(104, 25);
-            this.orderDateLabel.TabIndex = 3;
-            this.orderDateLabel.Text = "Order Date:";
+            this.orderAmountLabel.AutoSize = true;
+            this.orderAmountLabel.Location = new System.Drawing.Point(6, 37);
+            this.orderAmountLabel.Name = "orderAmountLabel";
+            this.orderAmountLabel.Size = new System.Drawing.Size(128, 25);
+            this.orderAmountLabel.TabIndex = 0;
+            this.orderAmountLabel.Text = "Order Amount";
             // 
             // btnCreateAccount
             // 
@@ -185,6 +185,7 @@ namespace SimpleDataApp
             this.btnCreateAccount.TabIndex = 2;
             this.btnCreateAccount.Text = "Create Account";
             this.btnCreateAccount.UseVisualStyleBackColor = true;
+            this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click);
             // 
             // btnPlaceOrder
             // 
@@ -196,17 +197,7 @@ namespace SimpleDataApp
             this.btnPlaceOrder.TabIndex = 3;
             this.btnPlaceOrder.Text = "Place Order";
             this.btnPlaceOrder.UseVisualStyleBackColor = true;
-            // 
-            // btnAddFinish
-            // 
-            this.btnAddFinish.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.btnAddFinish, 2);
-            this.btnAddFinish.Location = new System.Drawing.Point(93, 343);
-            this.btnAddFinish.Name = "btnAddFinish";
-            this.btnAddFinish.Size = new System.Drawing.Size(200, 34);
-            this.btnAddFinish.TabIndex = 4;
-            this.btnAddFinish.Text = "Finish";
-            this.btnAddFinish.UseVisualStyleBackColor = true;
+            this.btnPlaceOrder.Click += new System.EventHandler(this.btnPlaceOrder_Click);
             // 
             // btnAddAnotherAccount
             // 
@@ -218,6 +209,19 @@ namespace SimpleDataApp
             this.btnAddAnotherAccount.TabIndex = 5;
             this.btnAddAnotherAccount.Text = "Add Another Account";
             this.btnAddAnotherAccount.UseVisualStyleBackColor = true;
+            this.btnAddAnotherAccount.Click += new System.EventHandler(this.btnAddAnotherAccount_Click);
+            // 
+            // btnAddFinish
+            // 
+            this.btnAddFinish.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.btnAddFinish, 2);
+            this.btnAddFinish.Location = new System.Drawing.Point(93, 343);
+            this.btnAddFinish.Name = "btnAddFinish";
+            this.btnAddFinish.Size = new System.Drawing.Size(200, 34);
+            this.btnAddFinish.TabIndex = 4;
+            this.btnAddFinish.Text = "Finish";
+            this.btnAddFinish.UseVisualStyleBackColor = true;
+            this.btnAddFinish.Click += new System.EventHandler(this.btnAddFinish_Click);
             // 
             // NewCustomer
             // 

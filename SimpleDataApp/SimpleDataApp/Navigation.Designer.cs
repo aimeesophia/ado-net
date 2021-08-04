@@ -78,6 +78,7 @@ namespace SimpleDataApp
             this.btnGoToAdd.TabIndex = 1;
             this.btnGoToAdd.Text = "Add an account";
             this.btnGoToAdd.UseVisualStyleBackColor = true;
+            this.btnGoToAdd.Click += new System.EventHandler(this.btnGoToAdd_Click);
             // 
             // btnGoToFillOrCancel
             // 
@@ -88,6 +89,7 @@ namespace SimpleDataApp
             this.btnGoToFillOrCancel.TabIndex = 2;
             this.btnGoToFillOrCancel.Text = "Fill or cancel an order";
             this.btnGoToFillOrCancel.UseVisualStyleBackColor = true;
+            this.btnGoToFillOrCancel.Click += new System.EventHandler(this.btnGoToFillOrCancel_Click);
             // 
             // btnExit
             // 
@@ -98,6 +100,7 @@ namespace SimpleDataApp
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Navigation
             // 

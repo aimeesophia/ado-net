@@ -35,12 +35,12 @@ namespace SimpleDataApp
             this.btnFindByOrderID = new System.Windows.Forms.Button();
             this.dtpFillDate = new System.Windows.Forms.DateTimePicker();
             this.specifyFilledDateLabel = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvCustomerOrders = new System.Windows.Forms.DataGridView();
             this.btnCancelOrder = new System.Windows.Forms.Button();
             this.btnFillOrder = new System.Windows.Forms.Button();
             this.btnFinishUpdates = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerOrders)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -55,7 +55,7 @@ namespace SimpleDataApp
             this.tableLayoutPanel1.Controls.Add(this.btnFindByOrderID, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.dtpFillDate, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.specifyFilledDateLabel, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.dgvCustomerOrders, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnCancelOrder, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnFillOrder, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnFinishUpdates, 3, 3);
@@ -98,6 +98,7 @@ namespace SimpleDataApp
             this.btnFindByOrderID.TabIndex = 2;
             this.btnFindByOrderID.Text = "Find Order";
             this.btnFindByOrderID.UseVisualStyleBackColor = true;
+            this.btnFindByOrderID.Click += new System.EventHandler(this.btnFindByOrderID_Click);
             // 
             // dtpFillDate
             // 
@@ -121,19 +122,19 @@ namespace SimpleDataApp
             this.specifyFilledDateLabel.TabIndex = 4;
             this.specifyFilledDateLabel.Text = "If filling an order, specify filled date";
             // 
-            // dataGridView1
+            // dgvCustomerOrders
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 4);
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 129);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(769, 206);
-            this.dataGridView1.TabIndex = 5;
+            this.dgvCustomerOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel1.SetColumnSpan(this.dgvCustomerOrders, 4);
+            this.dgvCustomerOrders.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCustomerOrders.Location = new System.Drawing.Point(3, 129);
+            this.dgvCustomerOrders.Name = "dgvCustomerOrders";
+            this.dgvCustomerOrders.ReadOnly = true;
+            this.dgvCustomerOrders.RowHeadersVisible = false;
+            this.dgvCustomerOrders.RowHeadersWidth = 62;
+            this.dgvCustomerOrders.RowTemplate.Height = 33;
+            this.dgvCustomerOrders.Size = new System.Drawing.Size(769, 206);
+            this.dgvCustomerOrders.TabIndex = 5;
             // 
             // btnCancelOrder
             // 
@@ -144,6 +145,7 @@ namespace SimpleDataApp
             this.btnCancelOrder.TabIndex = 6;
             this.btnCancelOrder.Text = "Canel Order";
             this.btnCancelOrder.UseVisualStyleBackColor = true;
+            this.btnCancelOrder.Click += new System.EventHandler(this.btnCancelOrder_Click);
             // 
             // btnFillOrder
             // 
@@ -154,6 +156,7 @@ namespace SimpleDataApp
             this.btnFillOrder.TabIndex = 7;
             this.btnFillOrder.Text = "Fill Order";
             this.btnFillOrder.UseVisualStyleBackColor = true;
+            this.btnFillOrder.Click += new System.EventHandler(this.btnFillOrder_Click);
             // 
             // btnFinishUpdates
             // 
@@ -164,6 +167,7 @@ namespace SimpleDataApp
             this.btnFinishUpdates.TabIndex = 8;
             this.btnFinishUpdates.Text = "Finish";
             this.btnFinishUpdates.UseVisualStyleBackColor = true;
+            this.btnFinishUpdates.Click += new System.EventHandler(this.btnFinishUpdates_Click);
             // 
             // FillOrCancel
             // 
@@ -175,7 +179,7 @@ namespace SimpleDataApp
             this.Text = "FillOrCancel";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerOrders)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -188,7 +192,7 @@ namespace SimpleDataApp
         private System.Windows.Forms.Button btnFindByOrderID;
         private System.Windows.Forms.DateTimePicker dtpFillDate;
         private System.Windows.Forms.Label specifyFilledDateLabel;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvCustomerOrders;
         private System.Windows.Forms.Button btnCancelOrder;
         private System.Windows.Forms.Button btnFillOrder;
         private System.Windows.Forms.Button btnFinishUpdates;
