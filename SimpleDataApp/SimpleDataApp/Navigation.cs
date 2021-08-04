@@ -16,6 +16,5 @@ namespace SimpleDataApp
         {
             InitializeComponent();
         }
-
     }
 }
